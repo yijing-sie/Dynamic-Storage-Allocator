@@ -4,7 +4,7 @@ Intro to Computer Systems assignment :
 
 
 
-*   mm.c consists of my own version of malloc, free, realloc, and calloc functions to build a dynamic storage allocator that is correct, efficient, and fast
+### mm.c consists of my own version of malloc, free, realloc, and calloc functions to build a dynamic storage allocator that is correct, efficient, and fast
 *  It supports a full 64-bit address space
 *  It employs mini-blockas and segregated list for speed and memory efficiency 
 *  I implemented the following functions in mm.c:
