@@ -1,6 +1,6 @@
 # Dynamic-Storage-Allocator
 
-Intro to Computer Systems assignment. This assignment was built and (supposed to) run in Linux:
+Intro to Computer Systems assignment. This assignment was built and (supposed to) run in Linux :
 
 
 The goal is to build a Dynamic-Storage-Allocator that achieves high **space utilization** and **throughput** performance
