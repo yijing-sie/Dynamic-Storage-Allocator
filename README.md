@@ -19,18 +19,21 @@ The goal is to build a Dynamic-Storage-Allocator that achieves high **space util
 7. void print_heap(int mode): prints the content of heap in different modes
 ```
 ### Evaluation
-Two metrics are used to evaluate performance: utilization and throughput:
+All the trace files can be found in [traces](traces) for evaluating the model. Two metrics are used to evaluate performance: utilization and throughput:
 
 
-* A single performance index `Perf Index`, with 0 ≤ P ≤ 100, computed as a weighted sum of the space utilization and throughput
+* A single performance index `Perf Index`, with 0 ≤ P ≤ 100, computed as a weighted sum of the **space utilization** and **throughput**
 
 | Utilization | Throughput |
 --- | --- |
 60% | 40% | 
 
-* Space Utilization: The peak ratio between the aggregate amount of memory used by the driver (i.e., allocated via `malloc` but not yet freed via `free`) and the size of the heap used by my allocator. The utilization score is calculated as the average utilization across all traces.
+* **Space Utilization**: The peak ratio between the aggregate amount of memory used by the driver (i.e., allocated via `malloc` but not yet freed via `free`) and the size of the heap used by my allocator.
+> The utilization score is calculated as the average utilization across all trace files, and the full points will be granted when the allocator achieves more than **74%** for utilization
 
-* Throughput: The average number of operations completed per second, expressed in kilo-operations per second or KOPS. A trace that takes T seconds to perform n operations will have a throughput of n/(1000 · T) KOPS. The throughput is calculated as the average throughput across all traces.
+* **Throughput**: The average number of operations completed per second, expressed in kilo-operations per second or KOPS. A trace that takes T seconds to perform n operations will have a throughput of n/(1000 · T) KOPS. 
+
+> The throughput is calculated as the average throughput across all traces, and the full points will be granted when the allocator achieves more than **8,009** for throughput
 
 Here's the report for my allocator:
 
