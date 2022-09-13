@@ -7,7 +7,7 @@ The goal is to build a Dynamic-Storage-Allocator that achieves high **space util
 
 ### [mm.c](mm.c) consists of my own version of malloc, free, realloc, and calloc functions to build such dynamic storage allocator
 *  It supports a full 64-bit address space
-*  It employs mini-blockas and segregated list for speed and memory efficiency 
+*  It employs mini-blocks and segregated lists for speed and memory efficiency 
 *  I implemented the following functions in [mm.c](mm.c):
 ```
 1. bool mm_init(void) : performs any necessary initializations, such as allocating the initial heap area
@@ -16,7 +16,7 @@ The goal is to build a Dynamic-Storage-Allocator that achieves high **space util
 4. void *realloc(void *ptr, size_t size)
 5. void *calloc(size_t nmemb, size_t size); bool mm_checkheap(int);
 6. bool mm_checkheap(int line): scans the heap and checks it for possible errors.
-7. void print_heap(int mode): prints the content of heap in different modes
+7. void print_heap(int mode): prints the content of the heap in different modes
 ```
 ### Evaluation
 All the trace files can be found in [traces](traces) for evaluating the model. Two metrics are used to evaluate performance: utilization and throughput:
