@@ -5,7 +5,7 @@ Intro to Computer Systems assignment. This assignment was built and (supposed to
 
 The goal is to build a Dynamic-Storage-Allocator that achieves high **space utilization** and **throughput** performance
 
-### [mm.c](mm.c) consists of my own version of malloc, free, realloc, and calloc functions to build such dynamic storage allocator
+### [mm.c](mm.c) consists of my version of malloc, free, realloc, and calloc functions to build such dynamic storage allocator
 *  It supports a full 64-bit address space
 *  It employs mini-blocks and segregated lists for speed and memory efficiency 
 *  I implemented the following functions in [mm.c](mm.c):
